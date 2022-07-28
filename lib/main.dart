@@ -1,6 +1,6 @@
 import 'package:adyen_client_side_encryption/card_encrypter.dart';
 import 'package:adyen_client_side_encryption/unencrypted_card.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const App());
@@ -32,13 +32,9 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Adyen CSE demo'),
-      ),
-      body: Center(
-        child: Text('Card token: $token'),
-      ),
+    return WidgetsApp(
+      color: const Color(0x00ffffff),
+      builder: (context, _) => Center(child: Text('Card token: $token')),
     );
   }
 }
