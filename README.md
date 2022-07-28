@@ -6,7 +6,7 @@ A Flutter plugin to encrypt card details on the client. The encryption is done v
 
 ## Example
 
-```
+```dart
 final card = UnencryptedCard(
   number: '123456789',
   expiryMonth: '12',
