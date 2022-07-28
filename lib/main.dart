@@ -3,41 +3,17 @@ import 'package:adyen_client_side_encryption/unencrypted_card.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatefulWidget {
+  const App({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: Content(),
-    );
-  }
+  State<App> createState() => _AppState();
 }
 
-class Content extends StatefulWidget {
-  @override
-  State<Content> createState() => _ContentState();
-}
-
-class _ContentState extends State<Content> {
-  String PUBLIC_KEY = throw 'Add your public key here';
+class _AppState extends State<App> {
   String token = '';
 
   @override
@@ -51,7 +27,7 @@ class _ContentState extends State<Content> {
       cvc: '737',
       cardHolderName: 'John Smith',
     );
-    CardEncrypter.encryptCard(card, PUBLIC_KEY).then((value) => setState(() => token = value));
+    CardEncrypter.encryptCard(card, publicKey).then((value) => setState(() => token = value));
   }
 
   @override
@@ -66,3 +42,5 @@ class _ContentState extends State<Content> {
     );
   }
 }
+
+final String publicKey = throw 'Add your public key here';
