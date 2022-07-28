@@ -1,0 +1,8 @@
+platform :ios, '12.0'
+
+target 'Runner' do
+  use_frameworks!
+
+  pod 'Adyen', '4.8.0'
+
+end

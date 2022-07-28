@@ -1,0 +1,46 @@
+PODS:
+  - Adyen (4.8.0):
+    - Adyen/Actions (= 4.8.0)
+    - Adyen/Card (= 4.8.0)
+    - Adyen/Components (= 4.8.0)
+    - Adyen/Core (= 4.8.0)
+    - Adyen/DropIn (= 4.8.0)
+    - Adyen/Encryption (= 4.8.0)
+  - Adyen/Actions (4.8.0):
+    - Adyen/Core
+    - Adyen3DS2 (= 2.2.6)
+  - Adyen/Card (4.8.0):
+    - Adyen/Core
+    - Adyen/Encryption
+  - Adyen/Components (4.8.0):
+    - Adyen/Core
+    - Adyen/Encryption
+  - Adyen/Core (4.8.0):
+    - AdyenNetworking (= 1.0.0)
+  - Adyen/DropIn (4.8.0):
+    - Adyen/Actions
+    - Adyen/Card
+    - Adyen/Components
+    - Adyen/Core
+    - Adyen/Encryption
+  - Adyen/Encryption (4.8.0)
+  - Adyen3DS2 (2.2.6)
+  - AdyenNetworking (1.0.0)
+
+DEPENDENCIES:
+  - Adyen (= 4.8.0)
+
+SPEC REPOS:
+  trunk:
+    - Adyen
+    - Adyen3DS2
+    - AdyenNetworking
+
+SPEC CHECKSUMS:
+  Adyen: 7fa295453ebd2c014221e17f24590ec70e886709
+  Adyen3DS2: e683a519946e99a78adec8d89459e6eec53b0a4f
+  AdyenNetworking: 14567bd00c00ba2e2580a904708c7ba5f010b1f9
+
+PODFILE CHECKSUM: 2ae50ebe563eea121494d4502a0ef795f89bc3d9
+
+COCOAPODS: 1.11.3
