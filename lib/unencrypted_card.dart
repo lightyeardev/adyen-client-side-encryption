@@ -1,5 +1,5 @@
 class UnencryptedCard {
-  String number, expiryMonth, expiryYear, cvc, cardHolderName;
+  final String number, expiryMonth, expiryYear, cvc, cardHolderName;
 
   UnencryptedCard({
     required this.number,
