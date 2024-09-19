@@ -1,11 +1,11 @@
 name: adyen_client_side_encryption
 description: Adyen card client side encryption
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/lightyeardev/adyen-client-side-encryption
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.19.6"
+  flutter: ">=3.24.1"
 
 dependencies:
   flutter:
