@@ -1,6 +1,6 @@
 name: adyen_client_side_encryption
 description: Adyen card client side encryption
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/lightyeardev/adyen-client-side-encryption
 
 environment:
